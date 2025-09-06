@@ -1,5 +1,16 @@
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+/// Theme Wizard - main library entry.
+///
+/// Exports the public API for the `theme_wizard` package. This package provides
+/// UI widgets and helpers for theme switching. Implementation will be added in
+/// future versions.
+library theme_wizard;
+
+export 'src/widgets/theme_dropdown.dart';
+export 'src/widgets/theme_toggle.dart';
+export 'src/widgets/theme_preview.dart';
+
+export 'src/models/theme_model.dart';
+
+export 'src/constants/theme_defaults.dart';
+
+export 'src/utils/style_helpers.dart';
