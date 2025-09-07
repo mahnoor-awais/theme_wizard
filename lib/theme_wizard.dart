@@ -3,7 +3,7 @@
 /// Exports the public API for the `theme_wizard` package. This package provides
 /// UI widgets and helpers for theme switching. Implementation will be added in
 /// future versions.
-library theme_wizard;
+library;
 
 export 'src/widgets/theme_dropdown.dart';
 export 'src/widgets/theme_toggle.dart';

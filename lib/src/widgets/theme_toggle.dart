@@ -2,10 +2,12 @@
 ///
 /// Placeholder for future implementation. This widget will allow quick theme
 /// toggling and integrate with app state in consuming apps.
+library;
+
 import 'package:flutter/material.dart';
 
 class ThemeToggle extends StatelessWidget {
-  ThemeToggle({super.key});
+  const ThemeToggle({super.key});
 
   @override
   Widget build(BuildContext context) {
