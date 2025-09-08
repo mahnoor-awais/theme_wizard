@@ -1,0 +1,20 @@
+# Ignore platform-specific example build files
+example/android/
+example/ios/
+example/macos/
+example/windows/
+example/linux/
+example/web/
+
+# Ignore generated plugin registrant & ephemeral files
+**/GeneratedPluginRegistrant.*
+**/flutter_export_environment.sh
+**/ephemeral/
+
+# Ignore IDE configs
+.idea/
+.vscode/
+*.iml
+
+# Ignore build output
+build/
