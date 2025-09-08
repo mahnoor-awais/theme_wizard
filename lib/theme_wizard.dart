@@ -10,7 +10,9 @@ export 'src/widgets/theme_toggle.dart';
 export 'src/widgets/theme_preview_card.dart';
 
 export 'src/models/theme_model.dart';
+export 'src/models/theme_selector_styles.dart';
 
 export 'src/constants/theme_defaults.dart';
 
 export 'src/utils/style_helpers.dart';
+export 'src/widgets/theme_selector_panel.dart';
