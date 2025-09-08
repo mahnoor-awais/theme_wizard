@@ -2,7 +2,7 @@
 ///
 /// Displays each theme by its [ThemeModel.name] and, when available, a small
 /// color preview using [ThemeModel.previewColor]. Styling uses [ThemeDefaults]
-/// for sensible fallbacks.
+/// for sensible fallbacks, and can be overridden using [ThemeSelectorStyles].
 ///
 /// Example:
 /// ```dart
@@ -17,6 +17,8 @@ library;
 import 'package:flutter/material.dart';
 import 'package:theme_wizard/src/constants/theme_defaults.dart';
 import 'package:theme_wizard/src/models/theme_model.dart';
+import 'package:theme_wizard/src/models/theme_selector_styles.dart';
+import 'package:theme_wizard/src/utils/style_helpers.dart';
 
 class ThemeDropdown extends StatelessWidget {
   /// List of available themes to select from.
@@ -31,20 +33,29 @@ class ThemeDropdown extends StatelessWidget {
   /// Optional hint text shown when no theme is selected.
   final String? hintText;
 
+  /// Optional style overrides. Unspecified fields fall back to [ThemeDefaults].
+  final ThemeSelectorStyles? styles;
+
   const ThemeDropdown({
     super.key,
     required this.themes,
     required this.onChanged,
     this.selectedTheme,
     this.hintText,
+    this.styles,
   });
 
   @override
   Widget build(BuildContext context) {
-    final BorderRadius borderRadius =
-        BorderRadius.circular(ThemeDefaults.defaultRadius);
-    final Color borderColor = ThemeDefaults.defaultColors.border;
-    final Color fillColor = ThemeDefaults.defaultColors.surface;
+    final double radius =
+        mergeWithDefaults<double>(styles?.radius, ThemeDefaults.defaultRadius);
+    final BorderRadius borderRadius = BorderRadius.circular(radius);
+    final Color borderColor = mergeWithDefaults<Color>(
+        styles?.borderColor, ThemeDefaults.defaultColors.border);
+    final Color fillColor = mergeWithDefaults<Color>(
+        styles?.backgroundColor, ThemeDefaults.defaultColors.surface);
+    final EdgeInsets contentPadding = mergeWithDefaults<EdgeInsets>(
+        styles?.padding, ThemeDefaults.defaultPadding);
 
     return DropdownButtonFormField<ThemeModel>(
       value: selectedTheme,
@@ -80,7 +91,7 @@ class ThemeDropdown extends StatelessWidget {
       decoration: InputDecoration(
         hintText: hintText,
         isDense: true,
-        contentPadding: ThemeDefaults.defaultPadding,
+        contentPadding: contentPadding,
         filled: true,
         fillColor: fillColor,
         enabledBorder: OutlineInputBorder(
