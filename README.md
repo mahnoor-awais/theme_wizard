@@ -86,7 +86,7 @@ flutter run
 
 ### Screenshots / GIFs
 
-Placeholders – add your screenshots from the example app here.
+https://github.com/user-attachments/assets/86fc5f6e-c778-4550-83fa-bd3bd5270257
 
 ### License
 
