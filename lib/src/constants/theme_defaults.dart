@@ -16,6 +16,14 @@ class ThemeDefaults {
   /// Default corner radius for rounded elements.
   static const double defaultRadius = 12.0;
 
+  /// Default spacing between stacked elements.
+  static const double defaultSpacing = 12.0;
+
+  /// Baseline text style used in previews and placeholders.
+  ///
+  /// Note: In future versions, this may evolve into a full TextTheme set.
+  static const TextStyle defaultTextStyle = TextStyle(fontSize: 14);
+
   /// Neutral color palette for backgrounds, borders, and text accents.
   // ignore: library_private_types_in_public_api
   static final _DefaultColors defaultColors = _DefaultColors();
