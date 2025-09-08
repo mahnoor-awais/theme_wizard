@@ -7,7 +7,7 @@ library;
 
 export 'src/widgets/theme_dropdown.dart';
 export 'src/widgets/theme_toggle.dart';
-export 'src/widgets/theme_preview.dart';
+export 'src/widgets/theme_preview_card.dart';
 
 export 'src/models/theme_model.dart';
 
