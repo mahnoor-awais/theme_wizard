@@ -1,11 +1,21 @@
 name: theme_wizard
-description: "A new Flutter package project."
+description: >-
+  Theme Wizard helps you add theme switching to your Flutter apps with
+  clean, customizable UI widgets (dropdowns, previews, panels) and sensible
+  defaults. Bring your own ThemeData and state; Theme Wizard handles the UI.
 version: 0.0.1
-homepage:
-
+homepage: https://github.com/your-org/theme_wizard
+repository: https://github.com/your-org/theme_wizard
+issue_tracker: https://github.com/your-org/theme_wizard/issues
+topics:
+  - flutter
+  - theme
+  - ui
+  - widgets
+  - customization
 environment:
-  sdk: ^3.8.1
-  flutter: ">=1.17.0"
+  sdk: ">=3.0.0 <4.0.0"
+  flutter: ">=3.19.0"
 
 dependencies:
   flutter:
