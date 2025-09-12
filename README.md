@@ -4,8 +4,6 @@
 [![likes](https://img.shields.io/pub/likes/theme_wizard)](https://pub.dev/packages/theme_wizard/score)
 [![popularity](https://img.shields.io/pub/popularity/theme_wizard)](https://pub.dev/packages/theme_wizard/score)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![pub package](https://img.shields.io/pub/v/theme_wizard.svg)](https://pub.dev/packages/theme_wizard)
-
 
 Theme Wizard helps you add theme switching to your Flutter apps with clean, customizable UI widgets and sensible defaults. Bring your own ThemeData and state; Theme Wizard handles the UI.
 
