@@ -1,7 +1,7 @@
 name: theme_wizard
 description: >-
   Theme Wizard adds theme switching to Flutter apps with clean UI widgets (dropdowns, previews, panels) and sensible defaults.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/mahnoor-awais/theme_wizard
 repository: https://github.com/mahnoor-awais/theme_wizard
 issue_tracker: https://github.com/mahnoor-awais/theme_wizard/issues
